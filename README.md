@@ -1,16 +1,32 @@
 # event_booking
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Reference: https://freebieflux.com/download-event-booking-app-ui-kit-freebie-by-ashfak-ahmed-sayem.html
 
-A few resources to get you started if this is your first Flutter project:
+## Event Booking
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Splash screen
+- Onboarding screen
+- Sign in
+- Sign up
+- OTP Verification
+- Reset Password
+- App drawer
+- Home screen
+- Event details screen
+- Map screen
+- Search screen
+- Events screen
+- Filter bottom sheet
+- User Profile
+- Notification
+- Invite friends bottom sheet
+- Share with friends bottom sheet
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Packages use
+
+- GetX
+- Get CLI
+- Flutter Native Splash
+
