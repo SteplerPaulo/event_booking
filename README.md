@@ -29,4 +29,6 @@ Reference: https://freebieflux.com/download-event-booking-app-ui-kit-freebie-by-
 - GetX
 - Get CLI
 - Flutter Native Splash
-
+- Flutter Launcher Icons
+- Google Fonts
+- Flutter SVG

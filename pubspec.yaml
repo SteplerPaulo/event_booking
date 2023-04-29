@@ -1,7 +1,7 @@
 name: event_booking
 version: 1.0.0+1
 publish_to: none
-description: A new Flutter project.
+description: Event Booking
 environment: 
   sdk: '>=2.19.6 <3.0.0'
 
@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   flutter_native_splash: ^2.2.19
   flutter_launcher_icons: ^0.13.1
+  google_fonts: ^4.0.4
+  flutter_svg: ^2.0.5
 
 dev_dependencies: 
   flutter_lints: ^2.0.0
@@ -20,6 +22,11 @@ dev_dependencies:
 
 flutter: 
   uses-material-design: true
+  assets:
+   - assets/
+   - assets/logo.png
+   - assets/splash_logo.png
+
 
 flutter_native_splash:
   color: "#ffffff"
@@ -31,3 +38,5 @@ flutter_launcher_icons:
   image_path: "assets/logo.png"
   remove_alpha_ios: true
 
+
+ 
