@@ -13,51 +13,56 @@ void main() {
   const primaryTextColor = Color(0xFF120D26);
 
   ThemeData lightTheme = ThemeData(
-      //canvasColor: const Color(0xFFC4C4C4),
-      colorScheme: ColorScheme(
-        brightness: Brightness.light,
-        primary: lightPrimaryColor,
-        onPrimary: Colors.white,
-        secondary: lightSecondaryColor,
-        onSecondary: lightSecondaryColor,
-        error: Colors.red.shade900,
-        onError: Colors.white,
-        background: lightPrimaryColor,
-        onBackground: Colors.white,
-        surface: lightPrimaryColor,
-        onSurface: lightSecondaryColor,
+    //canvasColor: const Color(0xFFC4C4C4),
+    colorScheme: ColorScheme(
+      brightness: Brightness.light,
+      primary: lightPrimaryColor,
+      onPrimary: Colors.white,
+      secondary: lightSecondaryColor,
+      onSecondary: lightSecondaryColor,
+      error: Colors.red.shade900,
+      onError: Colors.white,
+      background: lightPrimaryColor,
+      onBackground: Colors.white,
+      surface: lightPrimaryColor,
+      onSurface: lightSecondaryColor,
+    ),
+    textTheme: GoogleFonts.comfortaaTextTheme(ThemeData().textTheme),
+    inputDecorationTheme: InputDecorationTheme(
+      errorMaxLines: 3,
+      contentPadding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
+      border: OutlineInputBorder(
+        borderRadius: const BorderRadius.all(Radius.circular(10)),
+        borderSide: BorderSide(color: Colors.grey.shade100),
       ),
-      textTheme: GoogleFonts.comfortaaTextTheme(ThemeData().textTheme),
-      inputDecorationTheme: InputDecorationTheme(
-        errorMaxLines: 3,
-        contentPadding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
-        border: OutlineInputBorder(
-          borderRadius: const BorderRadius.all(Radius.circular(10)),
-          borderSide: BorderSide(color: Colors.grey.shade100),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        elevation: 0,
+        minimumSize: const Size(50, 50),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
         ),
       ),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          elevation: 0,
-          minimumSize: const Size(250, 50),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+          minimumSize: const Size(100, 50),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
-          ),
-        ),
-      ),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-            minimumSize: const Size(100, 50),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
-            )),
-      ),
-      appBarTheme: const AppBarTheme(
-        iconTheme: IconThemeData(color: primaryTextColor),
-        backgroundColor: Colors.transparent,
-        foregroundColor: primaryTextColor,
-        elevation: 0,
-      ));
+          )),
+    ),
+    appBarTheme: const AppBarTheme(
+      iconTheme: IconThemeData(color: primaryTextColor),
+      backgroundColor: Colors.transparent,
+      foregroundColor: primaryTextColor,
+      elevation: 0,
+      centerTitle: false,
+    ),
+    chipTheme: const ChipThemeData(
+      labelStyle: TextStyle(color: Colors.white),
+    ),
+  );
 
   runApp(
     GetMaterialApp(
