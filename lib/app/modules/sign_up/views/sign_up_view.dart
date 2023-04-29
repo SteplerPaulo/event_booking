@@ -121,7 +121,9 @@ class SignUpView extends GetView<SignUpController> {
 
   Widget signUp() {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Get.toNamed(Routes.OTP_VERIFICATION);
+      },
       child: Stack(
         alignment: Alignment.center,
         children: const [

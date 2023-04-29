@@ -32,3 +32,4 @@ Reference: https://freebieflux.com/download-event-booking-app-ui-kit-freebie-by-
 - Flutter Launcher Icons
 - Google Fonts
 - Flutter SVG
+- Pinput
