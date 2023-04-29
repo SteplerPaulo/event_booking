@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.event_booking">
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
-        android:label="event_booking"
+        android:label="EventHub"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
