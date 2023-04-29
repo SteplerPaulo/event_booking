@@ -8,6 +8,10 @@ abstract class Routes {
   static const SIGN_UP = _Paths.SIGN_UP;
   static const OTP_VERIFICATION = _Paths.OTP_VERIFICATION;
   static const RESET_PASSWORD = _Paths.RESET_PASSWORD;
+  static const EXPLORE = _Paths.EXPLORE;
+  static const EVENTS = _Paths.EVENTS;
+  static const PROFILE = _Paths.PROFILE;
+  static const EVENT_MAP = _Paths.EVENT_MAP;
 }
 
 abstract class _Paths {
@@ -17,4 +21,8 @@ abstract class _Paths {
   static const SIGN_UP = '/sign-up';
   static const OTP_VERIFICATION = '/otp-verification';
   static const RESET_PASSWORD = '/reset-password';
+  static const EXPLORE = '/explore';
+  static const EVENTS = '/events';
+  static const PROFILE = '/profile';
+  static const EVENT_MAP = '/event-map';
 }

@@ -107,7 +107,9 @@ class SignInView extends GetView<SignInController> {
           ],
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.toNamed(Routes.RESET_PASSWORD);
+          },
           child: const Text("Forgot password?"),
         )
       ],
@@ -116,7 +118,9 @@ class SignInView extends GetView<SignInController> {
 
   Widget signIn() {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        Get.offAllNamed(Routes.HOME);
+      },
       child: Stack(
         alignment: Alignment.center,
         children: const [

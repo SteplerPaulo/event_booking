@@ -55,6 +55,7 @@ void main() {
       appBarTheme: const AppBarTheme(
         iconTheme: IconThemeData(color: primaryTextColor),
         backgroundColor: Colors.transparent,
+        foregroundColor: primaryTextColor,
         elevation: 0,
       ));
 
