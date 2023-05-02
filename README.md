@@ -1,8 +1,17 @@
-# event_booking
+# Event Booking App UI Kit
+## Flutter Implementation for IOS & Android Apps
 
+
+![Event Booking App- EventHub (Community)](https://user-images.githubusercontent.com/2784873/235619513-6b309cf4-2aaa-4d39-be31-44d091a536c5.png)
+
+
+Event Booking App UI Kit is a freebies design for Figma and Adobe XD
 
 
 Reference: https://freebieflux.com/download-event-booking-app-ui-kit-freebie-by-ashfak-ahmed-sayem.html
+
+
+
 
 ## Event Booking
 
