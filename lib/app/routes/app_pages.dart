@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/event_details/bindings/event_details_binding.dart';
+import '../modules/event_details/views/event_details_view.dart';
 import '../modules/event_map/bindings/event_map_binding.dart';
 import '../modules/event_map/views/event_map_view.dart';
 import '../modules/events/bindings/events_binding.dart';
@@ -73,6 +75,11 @@ class AppPages {
       name: _Paths.EVENT_MAP,
       page: () => const EventMapView(),
       binding: EventMapBinding(),
+    ),
+    GetPage(
+      name: _Paths.EVENT_DETAILS,
+      page: () => const EventDetailsView(),
+      binding: EventDetailsBinding(),
     ),
   ];
 }
