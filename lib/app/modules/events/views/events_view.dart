@@ -21,7 +21,7 @@ class EventsView extends GetView<EventsController> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           searchEvent(),
-          const SizedBox(height: 12),
+          const SizedBox(height: 8),
           Expanded(
             child: ListView.builder(
               itemCount: 25,
@@ -73,6 +73,7 @@ class EventsView extends GetView<EventsController> {
             flex: 2,
             child: TextField(
               decoration: InputDecoration(
+                isDense: true,
                 hintText: 'Search',
                 prefixIcon: IconButton(
                   onPressed: () {},
@@ -180,6 +181,8 @@ class EventsView extends GetView<EventsController> {
           filterDateAndTime(),
           const Spacer(),
           filterLocation(),
+          const Spacer(),
+          filterPriceRange(),
           const Spacer(),
           filterActionsButton(),
         ],
@@ -330,7 +333,7 @@ class EventsView extends GetView<EventsController> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("Time & Date"),
+        const Text("Location"),
         const SizedBox(height: 12),
         OutlinedButton(
           onPressed: () {},
@@ -367,6 +370,22 @@ class EventsView extends GetView<EventsController> {
             onPressed: () {},
             child: const Text("Apply"),
           ),
+        ),
+      ],
+    );
+  }
+
+  Widget filterPriceRange() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text("Price range"),
+        const SizedBox(height: 12),
+        RangeSlider(
+          max: 1000000,
+          divisions: 100,
+          values: const RangeValues(0, 100),
+          onChanged: (RangeValues values) {},
         ),
       ],
     );
