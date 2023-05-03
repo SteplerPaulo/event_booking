@@ -10,12 +10,12 @@ class EventMapView extends GetView<EventMapController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('EventMapView'),
+        title: const Text('Event Map'),
         centerTitle: true,
       ),
-      body: Center(
+      body: const Center(
         child: Text(
-          'EventMapView is working',
+          'Map here...',
           style: TextStyle(fontSize: 20),
         ),
       ),
