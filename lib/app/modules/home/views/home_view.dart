@@ -21,6 +21,15 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Get.theme.colorScheme.primary,
+        onPressed: () {},
+        child: const Icon(
+          Icons.add_box,
+          color: Colors.white,
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: Obx(() => screens.elementAt(controller.selectedIndex.value)),
       bottomNavigationBar: Obx(
         () => BottomNavigationBar(
