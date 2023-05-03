@@ -9,7 +9,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   const lightPrimaryColor = Color(0xFF5669FF);
-  const lightSecondaryColor = Color.fromARGB(255, 41, 89, 91);
+  const lightSecondaryColor = Color(0xFF3D56F0);
   const primaryTextColor = Color(0xFF120D26);
 
   ThemeData lightTheme = ThemeData(
