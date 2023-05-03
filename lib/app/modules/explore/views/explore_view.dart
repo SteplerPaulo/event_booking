@@ -303,14 +303,104 @@ class ExploreView extends GetView<ExploreController> {
                 ),
               ),
               const SizedBox(height: 12),
-              Stack(
-                children: const [
-                  CircleAvatar(
-                    radius: 15,
-                    backgroundImage: AssetImage("assets/profile.jpg"),
+              Row(
+                children: [
+                  SizedBox(
+                    width: 80,
+                    child: Stack(
+                      children: const [
+                        Align(
+                          alignment: Alignment.centerRight,
+                          child: CircleAvatar(
+                            radius: 15,
+                            backgroundImage: AssetImage("assets/jisoo.jpg"),
+                          ),
+                        ),
+                        Align(
+                          alignment: Alignment.center,
+                          child: CircleAvatar(
+                            radius: 15,
+                            backgroundImage: AssetImage("assets/rose.jpg"),
+                          ),
+                        ),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: CircleAvatar(
+                            radius: 15,
+                            backgroundImage: AssetImage("assets/profile.jpg"),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  const Text(
+                    "+20 Going",
+                    style: TextStyle(
+                      color: Color(0xFF3F38DD),
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ],
               ),
+
+              // Row(
+              //   children: [
+              //     Expanded(
+              //       flex: 2,
+              //       child: Stack(
+              //         children: const [
+              //           Align(
+              //             alignment: Alignment.centerRight,
+              //             child: CircleAvatar(
+              //               radius: 15,
+              //               backgroundImage: AssetImage("assets/jisoo.jpg"),
+              //             ),
+              //           ),
+              //           Align(
+              //             alignment: Alignment.center,
+              //             child: CircleAvatar(
+              //               radius: 15,
+              //               backgroundImage: AssetImage("assets/profile.jpg"),
+              //             ),
+              //           ),
+              //           Align(
+              //             alignment: Alignment.centerLeft,
+              //             child: CircleAvatar(
+              //               radius: 15,
+              //               backgroundImage: AssetImage("assets/rose.jpg"),
+              //             ),
+              //           ),
+              //         ],
+              //       ),
+              //     ),
+              //     const SizedBox(width: 12),
+              //     const Text(
+              //       "+20 Going",
+              //       style: TextStyle(
+              //         color: Color.fromARGB(255, 36, 33, 97),
+              //         fontSize: 15,
+              //         fontFamily: "Airbnb Cereal App",
+              //         fontWeight: FontWeight.w500,
+              //       ),
+              //     ),
+              //     const Spacer(),
+              //     ElevatedButton(
+              //       onPressed: () {},
+              //       child: const Text('Invite'),
+              //     )
+              //   ],
+              // ),
+
+              // Stack(
+              //   children: const [
+              //     CircleAvatar(
+              //       radius: 15,
+              //       backgroundImage: AssetImage("assets/profile.jpg"),
+              //     ),
+              //   ],
+              // ),
               const SizedBox(height: 12),
               Row(
                 children: const [

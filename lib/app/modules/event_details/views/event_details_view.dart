@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-
 import '../controllers/event_details_controller.dart';
 
 class EventDetailsView extends GetView<EventDetailsController> {
@@ -58,17 +56,41 @@ class EventDetailsView extends GetView<EventDetailsController> {
                   padding: const EdgeInsets.all(12),
                   child: Row(
                     children: [
-                      const CircleAvatar(
-                        radius: 20,
-                        backgroundImage: AssetImage("assets/profile.jpg"),
+                      Expanded(
+                        flex: 2,
+                        child: Stack(
+                          children: const [
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: CircleAvatar(
+                                radius: 15,
+                                backgroundImage: AssetImage("assets/jisoo.jpg"),
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment.center,
+                              child: CircleAvatar(
+                                radius: 15,
+                                backgroundImage:
+                                    AssetImage("assets/profile.jpg"),
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: CircleAvatar(
+                                radius: 15,
+                                backgroundImage: AssetImage("assets/rose.jpg"),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                       const SizedBox(width: 12),
                       const Text(
                         "+20 Going",
                         style: TextStyle(
-                          color: Color(0xff3f38dd),
+                          color: Color(0xFF3F38DD),
                           fontSize: 15,
-                          fontFamily: "Airbnb Cereal App",
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -134,10 +156,10 @@ class EventDetailsView extends GetView<EventDetailsController> {
                 ListTile(
                   leading: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: Image.asset("assets/profile.jpg"),
+                    child: Image.asset("assets/lisa.jpeg"),
                   ),
                   title: const Text(
-                    "Jennie Kim",
+                    "Lisa",
                     style: TextStyle(
                       color: Color(0xff110c26),
                       fontSize: 16,
