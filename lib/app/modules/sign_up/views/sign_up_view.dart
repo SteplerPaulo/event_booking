@@ -51,7 +51,7 @@ class SignUpView extends GetView<SignUpController> {
 
   Widget fullname() {
     return TextFormField(
-      controller: controller.emailController,
+      controller: controller.fullNameController,
       keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
         labelText: 'Full name',
