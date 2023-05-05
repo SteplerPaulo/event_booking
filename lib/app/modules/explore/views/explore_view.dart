@@ -34,7 +34,7 @@ class ExploreView extends GetView<ExploreController> {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () => Get.toNamed(Routes.NOTIFICATION),
             icon: const Icon(Icons.notifications),
           )
         ],
@@ -359,14 +359,14 @@ class ExploreView extends GetView<ExploreController> {
                           alignment: Alignment.center,
                           child: CircleAvatar(
                             radius: 15,
-                            backgroundImage: AssetImage("assets/rose.jpg"),
+                            backgroundImage: AssetImage("assets/nancy.jpg"),
                           ),
                         ),
                         Align(
                           alignment: Alignment.centerLeft,
                           child: CircleAvatar(
                             radius: 15,
-                            backgroundImage: AssetImage("assets/profile.jpg"),
+                            backgroundImage: AssetImage("assets/lisa.jpeg"),
                           ),
                         ),
                       ],
@@ -462,38 +462,57 @@ class ExploreView extends GetView<ExploreController> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                "Invite Friend",
-                style: TextStyle(
-                  color: Color(0xff110c26),
-                  fontSize: 24,
-                  fontFamily: "Airbnb Cereal App",
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
               const SizedBox(height: 12),
-              TextField(
-                decoration: InputDecoration(
-                  hintText: "Search",
-                  border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(30)),
-                  ),
-                  suffixIcon: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.search),
+              Text("Invite Friend", style: Get.textTheme.titleLarge),
+              Padding(
+                padding: const EdgeInsets.all(12),
+                child: TextField(
+                  decoration: InputDecoration(
+                    isDense: true,
+                    hintText: "Search",
+                    border: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(30)),
+                    ),
+                    suffixIcon: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.search),
+                    ),
                   ),
                 ),
               ),
-              const SizedBox(height: 12),
               Expanded(
                 child: ListView(
                   children: [
+                    ListTile(
+                      leading: const CircleAvatar(
+                        backgroundImage: AssetImage("assets/nancy.jpg"),
+                      ),
+                      title: const Text("Nancy Mcdonie"),
+                      subtitle: const Text("3.4K Followers"),
+                      trailing: Checkbox(
+                        value: false,
+                        onChanged: (value) {},
+                        shape: const CircleBorder(),
+                      ),
+                    ),
                     ListTile(
                       leading: const CircleAvatar(
                         backgroundImage: AssetImage("assets/profile.jpg"),
                       ),
                       title: const Text("Jennie Kim"),
                       subtitle: const Text("2K Followers"),
+                      trailing: Checkbox(
+                        value: false,
+                        onChanged: (value) {},
+                        shape: const CircleBorder(),
+                      ),
+                    ),
+                    ListTile(
+                      leading: const CircleAvatar(
+                        backgroundImage: AssetImage("assets/sana.jpg"),
+                      ),
+                      title: const Text("Sana Minatozaki"),
+                      subtitle: const Text("1.7K Followers"),
                       trailing: Checkbox(
                         value: false,
                         onChanged: (value) {},
@@ -536,6 +555,7 @@ class ExploreView extends GetView<ExploreController> {
                         shape: const CircleBorder(),
                       ),
                     ),
+                    const SizedBox(height: 48),
                   ],
                 ),
               ),
