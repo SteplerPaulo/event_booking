@@ -14,7 +14,6 @@ void main() {
   const secondaryTextColor = Color(0xFF716E90);
 
   ThemeData lightTheme = ThemeData(
-    //canvasColor: const Color(0xFFC4C4C4),
     colorScheme: ColorScheme(
       brightness: Brightness.light,
       primary: lightPrimaryColor,
