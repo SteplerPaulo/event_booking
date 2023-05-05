@@ -119,7 +119,7 @@ class SignInView extends GetView<SignInController> {
   Widget signIn() {
     return ElevatedButton(
       onPressed: () {
-        Get.offAllNamed(Routes.HOME);
+        Get.offAllNamed(Routes.EXPLORE);
       },
       child: Stack(
         alignment: Alignment.center,

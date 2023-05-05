@@ -8,8 +8,6 @@ import '../modules/events/bindings/events_binding.dart';
 import '../modules/events/views/events_view.dart';
 import '../modules/explore/bindings/explore_binding.dart';
 import '../modules/explore/views/explore_view.dart';
-import '../modules/home/bindings/home_binding.dart';
-import '../modules/home/views/home_view.dart';
 import '../modules/otp_verification/bindings/otp_verification_binding.dart';
 import '../modules/otp_verification/views/otp_verification_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
@@ -31,11 +29,6 @@ class AppPages {
   static const INITIAL = Routes.SIGN_IN;
 
   static final routes = [
-    GetPage(
-      name: _Paths.HOME,
-      page: () => HomeView(),
-      binding: HomeBinding(),
-    ),
     GetPage(
       name: _Paths.SIGN_IN,
       page: () => const SignInView(),
