@@ -9,13 +9,7 @@ class EventsView extends GetView<EventsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.arrow_back),
-        ),
-        title: const Text('Events'),
-      ),
+      appBar: AppBar(title: const Text('Events')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -127,13 +121,9 @@ class EventsView extends GetView<EventsController> {
   }
 
   Widget eventTitle() {
-    return const Text(
+    return Text(
       "Jo Malone London’s Mother’s Day Presents",
-      style: TextStyle(
-        color: Color(0xff110c26),
-        fontSize: 15,
-        fontWeight: FontWeight.w500,
-      ),
+      style: Get.theme.textTheme.titleMedium,
     );
   }
 
@@ -142,19 +132,16 @@ class EventsView extends GetView<EventsController> {
       mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: const [
-        Icon(
+      children: [
+        const Icon(
           Icons.location_on,
           color: Colors.grey,
-          size: 20,
+          size: 15,
         ),
-        SizedBox(width: 6),
+        const SizedBox(width: 2),
         Text(
-          "Radius Gallery • Santa Cruz, CA ",
-          style: TextStyle(
-            color: Color(0xff747688),
-            fontSize: 13,
-          ),
+          "Radius Gallery • Santa Cruz, CA",
+          style: Get.theme.textTheme.labelMedium,
         ),
       ],
     );

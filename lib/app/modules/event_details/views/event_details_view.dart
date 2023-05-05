@@ -117,40 +117,26 @@ class EventDetailsView extends GetView<EventDetailsController> {
                     fontSize: 35,
                   ),
                 ),
-                const ListTile(
-                  leading: Icon(Icons.calendar_month),
+                ListTile(
+                  leading: const Icon(Icons.calendar_month),
                   title: Text(
                     "14 December, 2021",
-                    style: TextStyle(
-                      color: Color(0xff110c26),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                    ),
+                    style: Get.textTheme.titleMedium,
                   ),
                   subtitle: Text(
                     "Tuesday, 4:00PM - 9:00PM",
-                    style: TextStyle(
-                      color: Color(0xff747688),
-                      fontSize: 12,
-                    ),
+                    style: Get.textTheme.bodySmall,
                   ),
                 ),
-                const ListTile(
-                  leading: Icon(Icons.location_on),
+                ListTile(
+                  leading: const Icon(Icons.location_on),
                   title: Text(
                     "Gala Convention Center",
-                    style: TextStyle(
-                      color: Color(0xff110c26),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                    ),
+                    style: Get.textTheme.titleMedium,
                   ),
                   subtitle: Text(
                     "36 Guild Street London, UK",
-                    style: TextStyle(
-                      color: Color(0xff747688),
-                      fontSize: 12,
-                    ),
+                    style: Get.textTheme.bodySmall,
                   ),
                 ),
                 ListTile(
@@ -158,31 +144,14 @@ class EventDetailsView extends GetView<EventDetailsController> {
                     borderRadius: BorderRadius.circular(10),
                     child: Image.asset("assets/lisa.jpeg"),
                   ),
-                  title: const Text(
-                    "Lisa",
-                    style: TextStyle(
-                      color: Color(0xff110c26),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  subtitle: const Text(
+                  title: Text("Lisa", style: Get.theme.textTheme.titleMedium),
+                  subtitle: Text(
                     "Artist",
-                    style: TextStyle(
-                      color: Color(0xff747688),
-                      fontSize: 12,
-                    ),
+                    style: Get.textTheme.bodySmall,
                   ),
                 ),
                 const SizedBox(height: 12),
-                const Text(
-                  "About Event",
-                  style: TextStyle(
-                    color: Color(0xff110c26),
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
+                Text("About Event", style: Get.theme.textTheme.titleLarge),
                 const SizedBox(height: 12),
                 const Text(
                     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis'),
@@ -202,7 +171,7 @@ class EventDetailsView extends GetView<EventDetailsController> {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );

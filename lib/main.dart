@@ -10,7 +10,8 @@ void main() {
 
   const lightPrimaryColor = Color(0xFF5669FF);
   const lightSecondaryColor = Color(0xFF3D56F0);
-  const primaryTextColor = Color(0xFF120D26);
+  const primaryTextColor = Color(0xff110c26);
+  const secondaryTextColor = Color(0xFF716E90);
 
   ThemeData lightTheme = ThemeData(
     //canvasColor: const Color(0xFFC4C4C4),
@@ -27,7 +28,33 @@ void main() {
       surface: lightPrimaryColor,
       onSurface: lightSecondaryColor,
     ),
-    textTheme: GoogleFonts.comfortaaTextTheme(ThemeData().textTheme),
+    textTheme: GoogleFonts.comfortaaTextTheme(
+      const TextTheme(
+        headlineMedium: TextStyle(
+          color: primaryTextColor,
+          fontSize: 24,
+          fontWeight: FontWeight.w500,
+        ),
+        titleLarge: TextStyle(
+          color: primaryTextColor,
+          fontSize: 18,
+          fontWeight: FontWeight.w500,
+        ),
+        titleMedium: TextStyle(
+          color: primaryTextColor,
+          fontSize: 16,
+          fontWeight: FontWeight.w500,
+        ),
+        labelMedium: TextStyle(
+          color: secondaryTextColor,
+          fontSize: 13,
+        ),
+        bodySmall: TextStyle(
+          color: secondaryTextColor,
+          fontSize: 12,
+        ),
+      ),
+    ),
     inputDecorationTheme: InputDecorationTheme(
       errorMaxLines: 3,
       contentPadding: const EdgeInsets.fromLTRB(15, 20, 15, 20),

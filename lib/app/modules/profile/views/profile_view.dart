@@ -1,3 +1,4 @@
+import 'package:event_booking/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -11,14 +12,14 @@ class ProfileView extends GetView<ProfileController> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () => Get.toNamed(Routes.EXPLORE),
           icon: const Icon(Icons.arrow_back),
         ),
         title: const Text('Profile'),
       ),
       body: ListView(
         shrinkWrap: true,
-        padding: const EdgeInsets.fromLTRB(24, 12, 24, 12),
+        padding: const EdgeInsets.fromLTRB(24, 0, 24, 12),
         children: [
           mainProfile(),
           aboutMe(),
@@ -41,13 +42,9 @@ class ProfileView extends GetView<ProfileController> {
             backgroundImage: AssetImage("assets/profile.jpg"),
           ),
           const SizedBox(height: 12),
-          const Text(
+          Text(
             "Jennie Kim",
-            style: TextStyle(
-              color: Color(0xff110c26),
-              fontSize: 24,
-              fontWeight: FontWeight.w500,
-            ),
+            style: Get.textTheme.headlineMedium,
           ),
           const SizedBox(height: 24),
           Row(
@@ -118,17 +115,10 @@ class ProfileView extends GetView<ProfileController> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
-        Text(
-          'About Me',
-          style: TextStyle(
-            color: Color(0xff110c26),
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        SizedBox(height: 24),
-        Text(
+      children: [
+        Text('About Me', style: Get.textTheme.titleLarge),
+        const SizedBox(height: 24),
+        const Text(
           "Enjoy your favorite dishes and a lovely your friends and family and have a great time. Food from local food trucks will be available for purchase. Read More",
         ),
       ],
@@ -144,14 +134,7 @@ class ProfileView extends GetView<ProfileController> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text(
-              "Interest",
-              style: TextStyle(
-                color: Color(0xff172b4d),
-                fontSize: 18,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
+            Text("Interest", style: Get.textTheme.titleLarge),
             const Spacer(),
             TextButton.icon(
               onPressed: () {},
