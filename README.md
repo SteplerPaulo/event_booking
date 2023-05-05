@@ -1,5 +1,5 @@
-# Event Booking App UI Kit
-## Flutter Implementation for IOS & Android Apps
+### Event Booking App UI Kit - Flutter Implementation for Android & IOS
+
 
 
 ![Event Booking App- EventHub (Community)](https://user-images.githubusercontent.com/2784873/235619513-6b309cf4-2aaa-4d39-be31-44d091a536c5.png)
