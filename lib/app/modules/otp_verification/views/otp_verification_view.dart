@@ -1,3 +1,4 @@
+import 'package:event_booking/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -47,7 +48,7 @@ class OtpVerificationView extends GetView<OtpVerificationController> {
             ),
             const SizedBox(height: 24),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.toNamed(Routes.EXPLORE),
               child: const Text("Continue"),
             ),
             const SizedBox(height: 24),
